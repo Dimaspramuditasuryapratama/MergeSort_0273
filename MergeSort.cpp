@@ -39,4 +39,6 @@ void mergerSort(int low, int high)
     
     int mid = (low + high) / 2;
     
+    mergerSort(low, mid);
+    mergerSort(mid + 1, high);
 }
